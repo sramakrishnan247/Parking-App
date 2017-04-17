@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Name List</title>
+</head>
+<body>
+{% for i in places %}
+	<a href="{{i.Name}}"><p>{{i.Name}}  {{i.Vacant}}</p></a>
+{% endfor %}
+</body>
+</html>

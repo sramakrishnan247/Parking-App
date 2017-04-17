@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>hola-name</h1>
+
+	<p>Place:{{ place_name }}</p>
+	<p>Car Owner Id:{{ carowner_id }}</p>
+
+	<form method="post" action="book/">
+		{% csrf_token %}
+    	<!-- {{ form }} -->
+		<button>Book</button>
+	</form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Security
+	</title>
+</head>
+<body>
+<h1>Security Profile</h1>
+
+<br>
+<p>Place Name {{sid.Name}}</p>
+<p>Vacant {{sid.Vacant}}</p>
+
+<form action="update/" method="post">
+{% csrf_token %}
+<button>Free</button>		
+</form>
+<p>{{place_name.Name}}</p>
+<p>{{plac_name.Vacant}}</p>
+</body>
+</html>

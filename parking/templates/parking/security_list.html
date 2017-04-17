@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Security List</title>
+</head>
+<body>
+<h1>Security has been made for the following:	</h1>
+	{% for i in security%}
+		<li><a href="{{i}}">{{i}}</a></li>
+		<br>
+	{% endfor %}	
+</body>
+</html>
