@@ -18,8 +18,8 @@ from django.conf import settings
 from django.conf.urls import include, url
 from django.conf.urls.static import static
 from django.contrib import admin
-from registration.backends.hmac.views import RegistrationView
-from parking.forms import MyCustomUserForm
+# from registration.backends.hmac.views import RegistrationView
+# from parking.forms import MyCustomUserForm
 
 
 urlpatterns = [
@@ -36,13 +36,13 @@ urlpatterns = [
     url(r'^carowner/(?P<carowner_id>[0-9]+)/search/name/(?P<place_name>([a-z]+))/book/$',views.book, name='name'),
     url(r'^landowner/(?P<landowner_id>[0-9]+)/rent/$', views.landowner),
     # url(r'^accounts/', include('registration.backends.simple.urls')),
-    url(r'^accounts/register/$',
-        RegistrationView.as_view(
-            form_class=MyCustomUserForm
-        ),
-        name='registration_register',
-    ),
-    url(r'^accounts/', include('registration.backends.simple.urls')),
+    # url(r'^accounts/register/$',
+    #     RegistrationView.as_view(
+    #         form_class=MyCustomUserForm
+    #     ),
+    #     name='registration_register',
+    # ),
+    # url(r'^accounts/', include('registration.backends.simple.urls')),
     # url(r'^accounts/', include('registration.backends.hmac.urls')),    
     # url(r'^admin/', admin.site.urls),
     ]
