@@ -5,6 +5,7 @@ from .models import CarOwner
 from .models import LandOwner
 from .models import Security
 from django.http import Http404
+# from caralgo import main
 # Create your views here.
 # def search(request):
 # 	return render(request, 'parking/search.html')
@@ -17,7 +18,8 @@ from django.http import Http404
 # vacant['bayleaf']=False;
 # vacant['mist']=True;
 
-def search(request,carowner_id):
+def search(request):
+	# main.start([(300, 0), (1200, 0), (1200, 400), (1000, 400), (1000, 600), (0, 600), (0, 300)])
 	return render(request,'parking/search.html',{'carowner_id':carowner_id})
 
 def loc(request,carowner_id):
@@ -25,6 +27,10 @@ def loc(request,carowner_id):
 
 def namelist(request,carowner_id):
 	return render(request, 'parking/namelist.html',{'places':Place.objects.all()})
+
+def home(request):
+	return render(request,'parking/home.html')
+
 
 def name(request, carowner_id, place_name):
 	places = [e.Name for e in Place.objects.all()]
@@ -84,6 +90,15 @@ def security_update(request, place_name):
 def security_list(request):
 	slist = [i.sid.Name for i in Security.objects.all()]	
 	return render(request, 'parking/security_list.html',{'security':slist})
+
+def carowner_list(request):
+	slist = [i for i in CarOwner.objects.all()]	
+	slist1 = [i for i in CarOwner.objects.all()]	
+	return render(request, 'parking/carowner_list.html',{'carowner':slist})
+
+def landowner_list(request):
+	slist = [i for i in LandOwner.objects.all()]	
+	return render(request, 'parking/landowner_list.html',{'landowner':slist})
 
 def landowner(request,landowner_id):
 	if request.method=='POST':

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Car Owner List</title>
+</head>
+<body>
+<h1>Car Owners</h1>
+	{% for i in carowner%}
+		<li><a href="{{i.pk}}">{{i}}</a></li>
+		<br>
+	{% endfor %}	
+</body>
+</html>

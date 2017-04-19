@@ -25,7 +25,10 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^search/', views.search),
+    url(r'^$',views.home),
     url(r'^security/$', views.security_list),
+    url(r'^carowner/$', views.carowner_list),
+    url(r'^landowner/$', views.landowner_list),
     url(r'^security/(?P<place_name>([a-z]+))/$', views.security),
     url(r'^security/(?P<place_name>([a-z]+))/update/$', views.security_update),
     url(r'^carowner/(?P<carowner_id>[0-9]+)/search/$', views.search, name='search'),

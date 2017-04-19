@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Land Owner List</title>
+</head>
+<body>
+<h1>Land Owners</h1>
+	{% for i in landowner%}
+		<li><a href="{{i.pk}}">{{i.Name}}</a></li>
+		<br>
+	{% endfor %}	
+</body>
+</html>
