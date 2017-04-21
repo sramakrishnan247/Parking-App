@@ -1,0 +1,58 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Open+Sans+Condensed:300,700);
+
+body {
+  background: #212121;
+  font-family: 'Open Sans', sans-serif;
+  color: #555;
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+
+.widget {
+  border-bottom: 1px solid #1f1f1f;
+  margin-bottom: 1em;
+  width: 30%;
+  margin: 3em auto;
+  padding-bottom: 1em;
+}
+
+.widget h3 {
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-bottom: 0.7em;
+  color: #4b4b4b;
+}
+
+.widget ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.widget ul li:nth-of-type(odd) a {
+  background: #282828;
+}
+
+.widget ul li:nth-of-type(odd) a:hover {
+  background: #313131;
+}
+
+.widget ul li a {
+  display: block;
+  padding: 5px;
+  color: #aaa;
+  text-decoration: none;
+  background: rgba(18, 18, 18, 0.14);
+  text-transform: uppercase;
+  font-size: .80em;
+  transition: padding-left 0.5s;
+}
+
+.widget ul li a:hover {
+  background: #191919;
+  padding-left: 5.25em;
+  transition: padding-left 0.35s;
+}

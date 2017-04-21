@@ -1,22 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="/static/css/security.css">
 	<title>
 		Security
 	</title>
 </head>
 <body>
-<h1>Security Profile</h1>
+<!-- <h1>Security Profile</h1> -->
+<h1>.</h1>
 
+
+
+<p class="titulo">{{sid.Name}}</p>
+<div title="Fraph" class="core">  
+	<center>
+	<form action="update/" method="post">
+		{% csrf_token %}
+		<button class="btn btn-lg">Free</button>		
+	</form>
+	
+	</center>
+	
+</div>
+
+<p class="descripcion">Vacant {{sid.Vacant}}</p>
 <br>
-<p>Place Name {{sid.Name}}</p>
-<p>Vacant {{sid.Vacant}}</p>
 
-<form action="update/" method="post">
-{% csrf_token %}
-<button>Free</button>		
-</form>
-<p>{{place_name.Name}}</p>
-<p>{{plac_name.Vacant}}</p>
+
+
 </body>
 </html>

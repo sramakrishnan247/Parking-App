@@ -1,0 +1,101 @@
+/* core design developed by @mrjopino */
+  @import url(http://fonts.googleapis.com/css?family=Titan+One|Pacifico);
+
+body {
+  background-image: radial-gradient(circle farthest-side at center, #2c90c6 0%, #1e6287 100%); no-repeat center center fixed;
+  background-attachment: fixed; background-size: 100% 100%;overflow: hidden;-webkit-font-smoothing: antialiased;}::selection { background: transparent;
+  	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+a {
+	text-decoration:none;
+	outline:none;
+}
+
+h5 {
+  margin: 6% auto;
+	text-decoration:none;
+	outline:none;
+}
+
+p:hover {
+  text-shadow: 2px 2px 50px white;
+}
+
+.core {
+	height:180px;
+	width:180px;
+	background: url(http://jopbox.tk/i/u/Avatar_1390746126.png)no-repeat center center;
+	margin: 2% auto;
+	border-radius: 100px 100px 100px 100px;
+	box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3);
+	overflow:hidden;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.titulo {
+	text-align:center;
+	margin:auto;
+	font-family: Titan One;
+	font-size:50px;
+	color:#FFF;
+	margin: 2% auto 0;}
+
+.descripcion {
+	text-align:center;
+	margin:auto;
+	font-family: Pacifico;
+	font-size:40px;
+	color:#FFF;
+	margin: 2% auto 0;
+}
+
+.footer {
+  display: block;
+  max-width: 400px;
+  text-align: center;
+  padding: 0;
+  font-size: 0.8em;
+  color: #888888;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.9);
+}
+.footer p a,
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+.footer p a:hover,
+.footer a:hover,
+.footer p a:active,
+.footer a:active {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+  color: white;
+}
+.footer p a.boton,
+.footer a.boton {
+  padding: 6px 12px;
+  margin-top: 10px;
+  background: #1a1a1a;
+  border-radius: 3px;
+}
+.footer p a.boton:hover,
+.footer a.boton:hover {
+  background: #4d4d4d; 
+}
+.footer p:last-of-type {
+  margin-bottom: 30px;
+}
+footer {
+  max-width: 175px;
+  margin: 0 auto;
+  display: block;
+  padding: 2em;
+  width: 100%;
+}
