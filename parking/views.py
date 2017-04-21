@@ -104,5 +104,14 @@ def landowner(request,landowner_id):
 	if request.method=='POST':
 		Place.objects.create(Name=request.POST.get('Name'),Vacant=request.POST.get('Slots'))
 		LandOwner.objects.create(Name=request.POST.get('Name'),Slots=request.POST.get('Slots'))
+		# LandOwner.objects.create(Name=request.POST.get('Name'),Vertices=request.POST.get('Vertices'))
 		print(request.POST)
-	return render(request, 'parking/landowner.html')
+	x = LandOwner.objects.get(pk=landowner_id)
+	return render(request, 'parking/landowner_id.html',{'landowner':x})
+
+def landowner_id(request,landowner_id):
+	x = LandOwner.objects.get(pk=landowner_id)
+	return render(request, 'parking/landowner_id.html',{'landowner':x})
+
+def security_login(request):
+	return render(request,'parking/security_login.html')

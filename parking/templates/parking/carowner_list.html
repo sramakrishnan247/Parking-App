@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 	<title>Car Owner List</title>
 </head>
 <body>
 <h1>Car Owners</h1>
 	{% for i in carowner%}
-		<li><a href="{{i.pk}}">{{i}}</a></li>
+		<li><a href="{{i.pk}}" class="btn btn-primary">{{i}}</a></li>
 		<br>
 	{% endfor %}	
 </body>

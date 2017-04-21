@@ -38,6 +38,7 @@ urlpatterns = [
     url(r'^carowner/(?P<carowner_id>[0-9]+)/search/name/(?P<place_name>([a-z]+))/$',views.name, name='name'),
     url(r'^carowner/(?P<carowner_id>[0-9]+)/search/name/(?P<place_name>([a-z]+))/book/$',views.book, name='name'),
     url(r'^landowner/(?P<landowner_id>[0-9]+)/rent/$', views.landowner),
+    url(r'^landowner/(?P<landowner_id>[0-9]+)/$', views.landowner_id),
     # url(r'^accounts/', include('registration.backends.simple.urls')),
     # url(r'^accounts/register/$',
     #     RegistrationView.as_view(
